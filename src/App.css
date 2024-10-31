@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.curriculum-calendar {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-panel {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.theme-selection, .days-selection, .input-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.theme-checkbox, .day-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calculate-button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #0056b3;
+}
+
+.hours-dropdown, .date-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.journey-card {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.journey-card h4 {
+  margin: 0 0 10px 0;
+}
+
+.end-date {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffecb3;
+  margin-top: 20px;
+}
+.study-date-box {
+  background-color: rgb(32, 65, 152);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block; /* Permite que o tamanho da caixa se ajuste ao conteúdo */
+  width: auto; /* Ajusta automaticamente o tamanho da caixa ao conteúdo */
+  max-width: 100%; /* Para evitar que a caixa ultrapasse os limites do contêiner pai */
+  margin: 10px; /* Espaço entre as caixas */
+  box-sizing: border-box; /* Inclui padding e bordas no tamanho total da caixa */
+}
